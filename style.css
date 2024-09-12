@@ -1,0 +1,397 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    scroll-behavior: smooth;
+ 
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;  
+    height: 100%;
+    width: 100%;
+    
+}
+nav{
+    
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3vh;
+    padding-left:40px ;
+    padding-right: 40px;
+    position: sticky;
+    z-index: -1000;
+    top: 0vh;
+   /* border-bottom: 1px solid white;*/
+   & h1{
+    font-weight: lighter;
+      font-family: 'roboto slab';   
+}
+& .buttons{
+    display: flex;
+    gap: 20px;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1);
+    & :hover{
+        border: 1px solid rgb(0, 191, 255);
+        box-shadow: 1px 1px 1px rgb(0, 191, 255);
+    }
+}
+& button{
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-family: 'roboto slab';
+    background-color: rgba(0, 0, 0, 0);
+}
+}
+#main{
+ height: 90vh;
+ width: 100vw;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 5vw;
+ position: relative;
+ top: 10vh;
+ & #v1{
+      z-index: 1;
+     width: 500px;
+     height: 500px;
+     padding: 5px 5px;
+     border: 1px solid white;
+     border-radius: 50%;
+    object-fit: cover;
+ }   
+ & h1{
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    font-weight: lighter;
+ }
+
+}
+#define{
+    height:95vh ;
+    padding: 10vh 10vw;  
+    z-index: 2;  
+    & h1{
+        font-family: 'pp-neue-montreal';
+        font-size: 45px;
+        letter-spacing: 0.4px;
+        line-height: 10vh;
+        -webkit-text-stroke: 1px rgba(37, 36, 36, 0.692);
+        font-weight: 300;
+        text-shadow: 0px 0px 1px white;
+    }
+        & button{
+        padding: 10px 30px;
+        color: white;
+        border: 1px solid white;;
+        background-color: rgba(0, 0, 0, 0); 
+        border-top-color:black;
+        border-bottom: 0px solid black;  
+        font-family: 'roboto slab';
+        font-weight: 300;
+        font-size: 20px;
+        margin-top: 15vh;
+        margin-left: 30vw;
+        
+
+    }
+    }
+
+.ab{
+    height: 10px;
+    position: relative;
+    top:19.8vh ;
+    left: 30.5vw;
+    width: 10px;
+    background-color: white;
+     border-radius: 50%;
+}
+.car{
+    height: 20vh;
+    border-top: 1px solid white;
+    width: 100vw;
+   & h1{
+    position: relative;
+    top: 5vh;
+    left: 10vw;
+    font-family: "playfair display";
+    font-size: 50px;
+   }
+}
+ #skills{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding-top: 20vh;
+    height: 210vh;
+ }
+     #a{
+        height: 30vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 400vw;
+        overflow-x: auto;
+
+        & h1{
+            font-size: 90px;
+            animation-name: move;
+            -webkit-text-stroke: 1px rgb(0, 191, 255);    
+            text-shadow: -2px 2px 0px white; 
+            transition: 0.5s linear;    
+            animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        &:hover{
+            -webkit-text-stroke: 1px white;    
+             color: rgb(0, 191, 255);
+            }    
+    }
+    }
+    #a::-webkit-scrollbar{
+        display: none;
+    }
+    #b{
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        transform: translateX(-400vw);
+        width: 700vw;
+    
+        & h1{
+           /* transform: translateX(-300vw);*/
+           -webkit-text-stroke: 1px rgb(0, 191, 255);    
+           text-shadow: -2px 2px 0px white; 
+           transition: 0.5s linear;
+           
+           font-size: 90px;
+            animation-name: move1;
+            animation-duration: 29s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            &:hover{
+                -webkit-text-stroke: 1px white;    
+                 color: rgb(0, 191, 255);
+                }   
+        
+        }
+    }
+     #c{
+        height: 30vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 400vw;
+    
+       & h1{
+        -webkit-text-stroke: 1px rgb(0, 191, 255);    
+        text-shadow: -2px 2px 0px white; 
+        transition: 0.5s linear;
+        font-size: 90px;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        &:hover{
+        -webkit-text-stroke: 1px white;    
+         color: rgb(0, 191, 255);
+        }      
+    
+    }
+    }
+   
+li::marker {
+    color: rgb(0, 191, 255);
+
+}
+body i{
+    color: rgb(0, 191, 255);
+}
+
+#sa::after{
+    content: 'Download CV';
+    position: relative;
+    right: 9vw;
+    flex-wrap: wrap;
+    top: 3.5vh;
+    display: none;
+}
+#sb::after{
+    content: 'LinnedIn';
+    position: relative;
+    right: 6vw;
+    flex-wrap: wrap;
+    top: 3.5vh;
+    display: none;
+}
+
+.container {
+    display: flex;
+    width: 170vw; /* Adjust as needed */
+    height: 60vh;
+}
+.section1 {
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    left: 10vw;
+    flex-shrink: 0;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.212);
+        border-radius: 30px;
+        line-height: 11vh;
+        background-color: rgba(0, 0, 0, 0);
+        & div h6{
+            position: relative;
+            top: 20vh;
+            font-size: 12px;
+            font-weight: 300;
+        }
+        & h2{
+            font-size: 30px;
+           font-family: 'Playfair Display';
+           font-weight: 900;
+           position: relative;
+           top: 15vh;
+        }
+        & h1{
+            font-size: 60px;
+           font-family: 'Playfair Display';
+           font-weight: 900;
+           position: relative;
+           top: 15vh;
+           &:hover{
+            color: rgb(0, 191, 255);
+           }
+        }
+       & button{
+        color: white;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        font-family: 'Playfair Display';
+        font-size: 20px;
+        margin-left: 5vw;
+        margin-top: 10vh;
+        transform: translateX(-3vw);
+        position: relative;
+        top: 16vh;
+         
+    }
+    }
+
+.section2{
+    height: 60vh;
+        width: 80vw;
+        flex-shrink: 0;
+        background-color: white;
+       border: 1px solid rgba(255, 255, 255, 0.212);
+       background-color: rgba(0, 0, 0, 0); 
+       position: relative;
+       top: 0vh;
+       left: 25vw;
+       border-radius: 30px;
+          & #social{
+            font-size: 50px;
+            position: relative;
+            left: 26vw;
+            display: flex;
+            gap: 3vw;
+            top: 40vh;
+          
+              }
+         
+         }
+          & #follow{
+            position: relative;
+            top: 8vh;
+            left: 15vw;
+            display: flex;
+            gap: 8vw;
+            & button{
+                font-family: 'playfair display';
+                padding: 10px 20px;
+                background-color: rgba(0, 0, 0, 0);
+                border: 1px solid white;
+            }
+        }
+      
+    #loader{
+        height: 101vh;
+        width: 100vw;
+        
+        display: flex;
+        flex-wrap: wrap;
+        display: block;
+        position: absolute;
+        background-color: white;
+        z-index: 11;
+        & .l{
+            height: 25vh;
+            width: 100vw;
+            flex-wrap: wrap;
+            margin-top: 5px;
+             background-color: black;
+             & span{
+                font-family: "playfair display";
+                position: relative;
+                left: 19vw;
+                font-size: 50px;
+                top: 10vh;
+                margin-left: 3vw;
+             }
+             
+        }
+    }
+    .messagescreen {
+        position: absolute;
+        top: 50vh;
+        left: 20vw;
+        font-size: 30px;
+        width: 60vw;
+        height: 16vh;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.493);
+        backdrop-filter:blur(10px); 
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 10;
+        & button{
+            padding: 10px 40px ;
+            color: black;
+               
+        }
+        & p{
+            font-weight: 900;
+        color: black;
+      }
+    }
+      @keyframes move {
+        0%{
+           transform: translateX(0%);
+      }
+      100%{
+         transform: translateX(calc(-50% - 38px));
+      }
+      }
+      @keyframes move1 {
+        0%{
+           transform: translateX(0%);
+      }
+      100%{
+         transform: translateX(calc(50% + 48px));
+      }
+      }
